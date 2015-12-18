@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(img/bg.jpg);
+  background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -38,7 +38,13 @@ nav {
   font-size: 18px;
 }
 
-#yellow {
+#navigation li a:hover, #navigation li a:focus {
+  color: #cfa205;
+  font-weight: bold;
+  zoom: 1.8em;
+}
+
+.active {
   color: #cfa205;
 }
 
@@ -70,16 +76,80 @@ header .fa {
   margin-top: 7px;
 }
 
-.icon {
-  height: 60px;
-  background-color: #e8e8e8;
-  text-align: center;
+.social {
+	height: 60px;
+	background: #e8e8e8;
+	text-align: center;
+	padding: 18px 0;
 }
 
-.icon .fa {
-  color: #7a7a7a;
-  line-height: 60px;
-  padding-left: 20px;
+.fa-stack:hover {
+	-webkit-transform: scale(1.2);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-facebook {
+	-webkit-transform: rotate(0deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-facebook:hover {
+	color: #2D4176;
+	-webkit-transform: rotate(360deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-twitter {
+	-webkit-transform: rotate(0deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-twitter:hover {
+	color: #4292CF;
+	-webkit-transform: rotate(360deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-google-plus {
+	-webkit-transform: rotate(0deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-google-plus:hover {
+	color: #BF3020;
+	-webkit-transform: rotate(360deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-pinterest {
+	-webkit-transform: rotate(0deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-pinterest:hover {
+	color: #BD081C;
+	-webkit-transform: rotate(360deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-youtube-play {
+	-webkit-transform: rotate(0deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social .fa-youtube-play:hover {
+	color: #C61C1F;
+	-webkit-transform: rotate(360deg);
+	transition: transform 0.5s ease-in-out;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social li span {
+	color: #7a7a7a;
+	font-size: 15px;
 }
 
 .text {
